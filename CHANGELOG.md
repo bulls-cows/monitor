@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.16](https://github.com/bulls-cows/monitor/compare/v0.1.15...v0.1.16) (2026-10-28)
+
+
+### Features
+
+* **docs:** 接入 TypeDoc 自动生成 SDK API 文档 ([9418087](https://github.com/bulls-cows/monitor/commit/94180877478551b456b533ce31c10ce5688a6ee0))
+* **scripts:** 优化文档部署脚本，升级 nsuite 依赖 ([d9ca251](https://github.com/bulls-cows/monitor/commit/d9ca251aa454613324df924bec0a2bb6cb65903c))
+
+
+### Bug Fixes
+
+* **sdk:** 移除加载和初始化时的控制台文案 ([9663603](https://github.com/bulls-cows/monitor/commit/96636036d86da4d3994481a4752781fe42c63a71))
+
 ### [0.1.15](https://github.com/bulls-cows/monitor/compare/v0.1.14...v0.1.15) (2026-07-08)
 
 
