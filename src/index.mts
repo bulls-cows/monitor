@@ -17,7 +17,7 @@ import { initApiPlugin } from "#plugin/api/initApiPlugin";
 import { initActionPlugin } from "#plugin/action/initActionPlugin";
 import { initErrorPlugin } from "#plugin/error/initErrorPlugin";
 import { initViewPlugin } from "#plugin/view/initViewPlugin";
-import { NODE_ENV, MODE, buildDate, buildVersion, FRONTEND_DOMAIN } from "#utils/ConstantUtils";
+import { NODE_ENV, MODE, buildDate, buildVersion } from "#utils/ConstantUtils";
 import { queryConfigData } from "#utils/ConfigUtils";
 import { generateRobustUserId } from "#utils/UserUtils";
 import type { ExportObj, ParamsAddBug, ParamsAddView, ParamsInitStore, Store } from "#types/index";
@@ -32,7 +32,7 @@ const init = (settings: ParamsInitStore): void => {
       return generateRobustUserId();
     },
   };
-  updateStore(storeToUpdate);
+  rawUpdateStore(storeToUpdate);
 
   initViewPlugin();
   initApiPlugin();
@@ -140,8 +140,3 @@ const exportObj: ExportObj = {
 };
 
 export default exportObj;
-
-window.console.log(
-  `%c已集成window.BetterMonitor对象😃\n详情请参阅官网${FRONTEND_DOMAIN}`,
-  "background: #ff5900; color: #000",
-);
