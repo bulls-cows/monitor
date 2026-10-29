@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/bulls-cows/monitor/compare/v0.1.16...v0.1.17) (2026-10-29)
+
+
+### Bug Fixes
+
+* **store:** 更新配置时合并 fields 保留已有字段 ([54bdd61](https://github.com/bulls-cows/monitor/commit/54bdd61683c8267a0fec5802eab43706054bc269))
+
 ### [0.1.16](https://github.com/bulls-cows/monitor/compare/v0.1.15...v0.1.16) (2026-10-28)
 
 
