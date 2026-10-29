@@ -50,7 +50,9 @@ const store: Store = {
 };
 
 export const updateStore = (config: Partial<Store>): Store => {
-  return Object.assign(store, config);
+  return Object.assign(store, config, {
+    fields: { ...store.fields, ...config.fields },
+  });
 };
 
 export const getStore = (): Store => {
